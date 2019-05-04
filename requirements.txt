@@ -1,0 +1,6 @@
+scapy
+os
+time
+sys
+netifaces
+colorama
