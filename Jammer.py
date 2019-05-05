@@ -69,7 +69,7 @@ try:
                 							ap_list.append(pkt.addr2)
                 							print "Available SSID: %s MAC address: %s " %(pkt.info, pkt.addr2)
 									return
-					sniff(iface = "wlan0mon" , prn = PacketHandler)
+					sniff(iface = input_Interface , prn = PacketHandler)
 					bssid = raw_input(Fore.CYAN + ">> [?] Enter Target BSSID(Mac Address): ")
 					time.sleep(1)
 					client = "FF:FF:FF:FF:FF:FF"
